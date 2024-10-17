@@ -1,0 +1,396 @@
+:root {
+    --primary: rgb(81, 93, 97);
+    --secondary: #fff;
+    --primary-hover: rgb(128, 154, 163);
+    --nav-list-item: rgb(81, 93, 97);
+    --nav-list-item-hover: rgb(95, 113, 119);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: var(--primary);
+    overflow: hidden;
+}
+
+nav {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+nav > .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > .container > .brand-logo {
+    color: var(--secondary);
+}
+
+.btn {
+    border: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+    color: var(--secondary);
+}
+
+.nav-items {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items > .nav-items-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-items-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-items-list .list-item {
+    background-color: var(--nav-list-item);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    transition: 0.7s;
+}
+
+.nav-items-list .list-item:hover {
+    background-color: var(--nav-list-item-hover);
+}
+
+#content > .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#content > .container > .login-form {
+    background-color: aliceblue;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.login-form > .header {
+    font-size: 24pt;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form > .body {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-form > .body > button {
+    padding: 1rem 3rem;
+}
+
+#user-profile > .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#user-profile > .container > .profile-info {
+    background-color: aliceblue;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.profile-info > .header {
+    display: flex;
+    gap: 4rem;
+}
+
+.header > .img {
+    border-radius: 50%;
+}
+
+.header > .email-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info > .content {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    padding: 0.5rem;
+}
+
+.content > .element {
+    display: flex;
+    gap: 1rem;
+}
+
+.content > .title {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+#user-reservation > .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#user-reservation > .container > .service-form {
+    background-color: aliceblue;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.service-form > form {
+    display: grid;
+    grid-template-columns: 0.5fr auto;
+    gap: 1.2rem;
+}
+
+.service-form > form > label {
+    padding: 0.3rem;
+}
+
+.service-form > form > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 0.5rem;
+}
+
+.service-form > form > select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 0.3rem;
+}
+
+.service-form > form > button {
+    border: none;
+    padding: 0.7rem;
+    width: 8rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: 0.7s;
+}
+
+.service-form > form > button:hover {
+    background-color: var(--primary-hover);
+}
+
+.service-form > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-form > .header .btn {
+    padding: .5rem;
+}
+
+.service-form > .header .btn-group {
+    display: flex;
+    gap: .5rem;
+}
+
+.service-form > .header .action-delete {
+    background-color: rgb(190, 10, 10);
+}
+
+.service-form > .header .action-delete:hover {
+    background-color: rgb(223, 39, 39);
+}
+
+.service-form > .reservation-info {
+    display: grid;
+    grid-gap: .5rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    padding: .5rem;
+    margin-top: .7rem;
+}
+
+.reservation-info > .element {
+    background-color: rgb(255, 255, 255);
+    padding: .4rem;
+}
+
+#user-dashboard > .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#user-dashboard > .container > .reservations {
+    background-color: aliceblue;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.reservations > .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.reservations > .header button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.reservations td {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.reservations .actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: none;
+}
+
+.reservations .action-view {
+    padding: 0.5rem 1rem;
+}
+
+.reservations .action-delete {
+    background-color: rgb(190, 10, 10);
+    padding: 0.5rem 1rem;
+}
+
+.reservations .action-delete:hover {
+    background-color: rgb(223, 39, 39);
+}
+
+#msg-container > .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.msg-body {
+    background-color: aliceblue;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-body h1 {
+    text-transform: uppercase;
+}
+
+.msg-body button {
+    padding: 0.8rem 1rem;
+    margin: 2rem 1rem 0;
+}
+
+table {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-collapse: collapse;
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+thead,
+tbody {
+    width: 100%;
+}
+
+th,
+td {
+    width: 25%;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+footer > .content {
+    background-color: var(--primary);
+    display: flex;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}

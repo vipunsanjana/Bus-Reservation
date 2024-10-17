@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="okta.authn.sdk.api" type="repository">
+    <properties include-transitive-deps="false" maven-id="com.okta.authn.sdk:okta-authn-sdk-api:0.1.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/okta/authn/sdk/okta-authn-sdk-api/0.1.0/okta-authn-sdk-api-0.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
